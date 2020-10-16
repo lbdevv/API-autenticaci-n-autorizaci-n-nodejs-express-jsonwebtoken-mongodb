@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "111e1a2c-1731-4227-8dd3-e60d07a080ac",
+		"name": "Api company products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmODg4YmNhZTk0ZjliNGYyNDVmZTcwNiIsImlhdCI6MTYwMjgwMTM0NCwiZXhwIjoxNjAyODg3NzQ0fQ.JrtB7oFAby197X_-9ohYVT6BQnRYbNMRTi9M_6Nmoss",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"laptop hp\",\r\n    \"price\": 999.99,\r\n    \"category\": \"laptops\",\r\n    \"imgURL\": \"https://cdnx.jumpseller.com/gigabyte/image/9151656/resize/635/635?1591548345\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/:productId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"laptop Lenovo Thinkpad\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/products/5f860723f820e3173cc4b070",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"5f860723f820e3173cc4b070"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/:productId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmODg4Y2M1YTcwZjMzMzBmY2Q0NDBhNiIsImlhdCI6MTYwMjgwNTM0MiwiZXhwIjoxNjAyODkxNzQyfQ.sH4D1eAV6BmF8WjeFm5VreCFBUgn7PI2qsHOIx948V4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:4000/api/products/5f876490e3a3ac3d285993a8",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"5f876490e3a3ac3d285993a8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/:productId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"laptop hp\",\r\n    \"price\": 999.99,\r\n    \"category\": \"laptops\",\r\n    \"imgURL\": \"https://cdnx.jumpseller.com/gigabyte/image/9151656/resize/635/635?1591548345\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/products/5f860723f820e3173cc4b070",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"5f860723f820e3173cc4b070"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "/api/users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmODg4Y2M1YTcwZjMzMzBmY2Q0NDBhNiIsImlhdCI6MTYwMjgyNTY4NywiZXhwIjoxNjAyOTEyMDg3fQ.wBKInGuoAa91cOnayyyvuRkaaiovT1W13eRyG1TlVEg",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"pepe@live.cl\",\r\n    \"password\":\"password\",\r\n    \"roles\": [\"admin\"]\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "/api/auth/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"hola\",\r\n    \"email\":\"pepe@s.cl\",\r\n    \"password\": \"password\",\r\n    \"roles\": [\"asdfsad\",\"asdf\"]\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/auth/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/auth/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"pepe@live.cl\",\r\n    \"password\":\"password\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/auth/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
